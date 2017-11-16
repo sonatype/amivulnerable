@@ -1,0 +1,9 @@
+{
+  "expiration": "2018-01-01T00:00:00Z",
+  "conditions": [
+    {"bucket": "uploadsforamivulnerable"},
+    ["starts-with", "$key", "uploads/"],
+    {"acl": "private"},
+    {"success_action_redirect": "success.html"}
+  ]
+}

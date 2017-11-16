@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Upload a file to S3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <form action="https://uploadsforamivulnerable.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="key" value="uploads/${filename}">
+      <input type="hidden" name="AWSAccessKeyId" value="AKIAIOVVLENHC753SA2A"> 
+      <input type="hidden" name="acl" value="private"> 
+      <input type="hidden" name="success_action_redirect" value="success.html">
+      <input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMTgtMDEtMDFUMDA6MDA6MDBaIiwKICAiY29uZGl0aW9ucyI6IFsKICAgIHsiYnVja2V0IjogInVwbG9hZHNmb3JhbWl2dWxuZXJhYmxlIn0sCiAgICBbInN0YXJ0cy13aXRoIiwgIiRrZXkiLCAidXBsb2Fkcy8iXSwKICAgIHsiYWNsIjogInByaXZhdGUifSwKICAgIHsic3VjY2Vzc19hY3Rpb25fcmVkaXJlY3QiOiAic3VjY2Vzcy5odG1sIn0KICBdCn0K">
+      <input type="hidden" name="signature" value="eWPC4QhCUAudLJ8pfuvCcK0D3GE=">
+      <!-- Include any additional input fields here -->
+
+      File to upload to S3: 
+      <input name="file" type="file"> 
+      <br> 
+      <input type="submit" value="Upload a file to S3"> 
+    </form>
+  </body>
+</html>
