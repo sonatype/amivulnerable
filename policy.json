@@ -4,6 +4,8 @@
     {"bucket": "uploadsforamivulnerable"},
     ["starts-with", "$key", "uploads/"],
     {"acl": "private"},
-    {"success_action_redirect": "success.html"}
+    {"success_action_redirect": "success.html"},
+    ["starts-with", "$x-amz-meta-email", ""],
+    ["starts-with", "$x-amz-meta-password", ""]
   ]
 }
